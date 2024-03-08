@@ -13,5 +13,14 @@
 //    true - if "num" is palindromic
 //    false - otherwise
 bool isNumberPalindromic(int num) {
-  return true;
+  int copy = num;
+  int reversedNum = 0;
+
+  while (copy != 0) {
+    reversedNum *= 10;
+    reversedNum += copy % 10;
+    copy /= 10;
+  }
+
+  return reversedNum == num;
 }
