@@ -4,6 +4,8 @@
 //  Created by Sheynin Vasily.
 //
 
+//  Implements isNumberPalindromic function
+
 #include "function.h"
 
 //  Check if number "num" is palindromic.
@@ -13,8 +15,8 @@
 //    true - if "num" is palindromic
 //    false - otherwise
 bool isNumberPalindromic(int num) {
-  int copy = num;
-  int reversedNum = 0;
+  int copy = num;        //contains copy of number num
+  int reversedNum = 0;   //contains reversed number num
 
   while (copy != 0) {
     reversedNum *= 10;
